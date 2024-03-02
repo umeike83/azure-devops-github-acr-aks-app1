@@ -19,6 +19,8 @@ variables:
   # Agent VM image name
 pool:
   name: Default
+  demands:
+      - agent.name -equals Ifeanyis-MBP
 
 stages:
 - stage: Build
