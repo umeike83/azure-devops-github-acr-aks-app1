@@ -17,7 +17,7 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  pool: default
+  pool: 'default'
   vmImageName: 'Ifeanyi’s MacBook Pro'
 
 stages:
