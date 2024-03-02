@@ -17,10 +17,7 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-pool:
-  name: Default
-  demands:
-   - agent.name -equals Ifeanyis-MBP
+pool: Default
 
 stages:
 - stage: Build
