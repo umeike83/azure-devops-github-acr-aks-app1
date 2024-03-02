@@ -20,7 +20,7 @@ variables:
 pool:
   name: Default
   demands:
-      - agent.name -equals Ifeanyis-MBP
+    - agent.name -equals Ifeanyis-MBP
 
 stages:
 - stage: Build
