@@ -19,8 +19,7 @@ variables:
   # Agent VM image name
 pool:
   name: 'local'
-  demands:
-   - agent.name -equals 'aks-agent'
+  vmImageName: 'Ifeanyi’s MacBook Pro'
 stages:
 - stage: Build
   displayName: Build and push stage
