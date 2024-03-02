@@ -18,6 +18,7 @@ variables:
 
   # Agent VM image name
   pool: local
+  vmImageName: 'aks-agent'
 
 stages:
 - stage: Build
