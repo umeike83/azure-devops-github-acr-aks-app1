@@ -18,8 +18,8 @@ variables:
 
   # Agent VM image name
 pool:
-  name: Default
-  vmImage: 'Ifeanyi’s MacBook Pro'
+  name: 'Default'
+  vmImage: 'Ifeanyis MBP'
 
 stages:
 - stage: Build
