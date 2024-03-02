@@ -17,7 +17,7 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  vmImageName: 'Ifeanyis-MBP'
+  vmImageName: 'Ifeanyi’s MacBook Pro'
 
 stages:
 - stage: Build
