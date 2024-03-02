@@ -19,7 +19,7 @@ variables:
   # Agent VM image name
 pool:
   name: 'default'
-  vmImage: 'Ifeanyis-MBP'
+  vmImageName: 'Ifeanyis-MBP'
 
 stages:
 - stage: Build
