@@ -48,14 +48,14 @@ stages:
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)/kube-manifests'
         Contents: '**'
-        TargetFolder: '$(build.artifactstagingdirectrory)'
+        TargetFolder: '$(Build.ArtifactStagingDirectrory)'
         OverWrite: true
     # List files from Build Artifact Staging Directory - After Copy
-    - bash: echo After copying to Build Artifact Directory; ls -R $(Build.ArtifactStagingDirectory)
+    - bash: echo After copying to Build Artifact Directory; ls -R $(build.artifactstagingsirectory)
     # Task-3: Publish build artifacts (Publish build to Azure Pipelines)
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact: drop'
       inputs:
         PathtoPublish: '$(build.artifactstagingdirectory)'
-        ArtifactName: 'kube-manifests'
-        publishLocation: 'Container'
+        ArtifactName: 'kube-manifests2'
+        
