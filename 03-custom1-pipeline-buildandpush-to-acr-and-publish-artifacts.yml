@@ -26,7 +26,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: local
+      name: Default
       vmImage: $(vmImageName)
     steps:
     - task: Docker@2
@@ -46,7 +46,7 @@ stages:
     # Target Directory: 
     - task: CopyFiles@2
       inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)/kube-manifests1'
+        SourceFolder: '$(System.DefaultWorkingDirectory)/kube-manifests'
         Contents: '**'
         TargetFolder: '$(Build.ArtifactStagingDirectrory)'
         OverWrite: true
@@ -56,5 +56,5 @@ stages:
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'kube-manifests1'
+        ArtifactName: 'kube-manifests'
         publishLocation: 'Container'
