@@ -29,7 +29,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: aks-agent
+      name: local
       vmImage: $(vmImageName)
     steps:
     - task: Docker@2
