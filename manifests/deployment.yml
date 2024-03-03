@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: app1ngnixaks1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app1ngnixaks1
+  template:
+    metadata:
+      labels:
+        app: app1ngnixaks1 
+    spec:
+      containers:
+        - name: app1ngnixaks1 
+          image: liuaksdevopsacr1.azurecr.io/app1ngnixaks1
+          ports:
+          - containerPort: 80
