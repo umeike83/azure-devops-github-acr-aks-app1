@@ -53,6 +53,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
+      name: local
       vmImage: $(vmImageName)
     environment: 'umeike83azuredevopsgithubacraksapp1.default'
     strategy:
