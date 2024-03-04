@@ -30,7 +30,7 @@ stages:
         containerRegistry: 'manual-liuaksdevopsacr-svc'
         repository: 'custom2aksnginxapp1'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        dockerfile: '**/Dockerfile'
         tags:
           $(tag)
           $(Build.SourceVersion)
